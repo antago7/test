@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Payment Simulation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="payment-container">
+    <h1>Payment Simulation</h1>
+    <form class="payment-form">
+      <div class="form-group">
+        <label for="cardNumber">Card Number</label>
+        <input type="text" id="cardNumber" placeholder="1234 5678 9123 4567" required>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="expiryDate">Expiry Date</label>
+          <input type="text" id="expiryDate" placeholder="MM/YY" required>
+        </div>
+        <div class="form-group">
+          <label for="cvv">CVV</label>
+          <input type="password" id="cvv" placeholder="123" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="cardHolder">Cardholder Name</label>
+        <input type="text" id="cardHolder" placeholder="John Doe" required>
+      </div>
+      <div class="form-group">
+        <label for="billingAddress">Billing Address</label>
+        <input type="text" id="billingAddress" placeholder="123 Main Street" required>
+      </div>
+      <button type="submit" class="pay-btn">Pay Now</button>
+    </form>
+  </div>
+</body>
+</html>

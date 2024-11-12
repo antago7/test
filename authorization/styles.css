@@ -1,0 +1,102 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+  }
+  
+  /* Auth Container */
+  .auth-container {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  .auth-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Toggle Buttons */
+  .auth-toggle {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .auth-toggle button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: #f0f2f5;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+    color: #333;
+  }
+  
+  .auth-toggle button.active {
+    background: #007BFF;
+    color: #fff;
+  }
+  
+  /* Form Styling */
+  .auth-form {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .auth-form.active {
+    display: flex;
+  }
+  
+  .auth-form h2 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .auth-btn {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .auth-btn:hover {
+    background-color: #0056b3;
+  }

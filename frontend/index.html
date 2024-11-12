@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World</title>
+  <style>
+    /* Reset some default styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #f8b195, #f67280, #c06c84, #6c5b7b, #355c7d);
+      font-family: Arial, sans-serif;
+      color: #fff;
+      overflow: hidden;
+      animation: backgroundAnimation 10s infinite alternate;
+    }
+
+    /* Keyframes for background color animation */
+    @keyframes backgroundAnimation {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    h1 {
+      font-size: 4rem;
+      letter-spacing: 0.05em;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+      animation: fadeIn 2s ease-out;
+    }
+
+    /* Fade in effect */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: rgba(255, 255, 255, 0.3);
+      border: none;
+      border-radius: 25px;
+      color: #fff;
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .button:hover {
+      background-color: rgba(255, 255, 255, 0.6);
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hello, World!</h1>
+    <a href="#" class="button">Explore More</a>
+  </div>
+</body>
+</html>
