@@ -14,3 +14,24 @@ services:
       dockerfile: Dockerfile.backend
     ports:
       - "3050:3050" # Проброс порта 3055 на 3050
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - "4000:80"
+
+  authoriation:
+    build:
+      context: .
+      dockerfile: Dockerfile.authorization
+    ports:
+      - "2000:80"
+
+  onlinepayment:
+    build:
+      context: .
+      dockerfile: Dockerfile.onlinepayment
+    ports:
+      - "5000:80"
